@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="petal width (cm) <= 0.8\ngini = 0.67\nsamples = 89\nvalue = [51, 51, 48]\nclass = setosa", fillcolor="#ffffff"] ;
+1 [label="gini = 0.0\nsamples = 32\nvalue = [51, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal width (cm) <= 1.65\ngini = 0.5\nsamples = 57\nvalue = [0, 51, 48]\nclass = versicolor", fillcolor="#f3fdf8"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="sepal width (cm) <= 2.65\ngini = 0.1\nsamples = 31\nvalue = [0, 51, 3]\nclass = versicolor", fillcolor="#45e788"] ;
+2 -> 3 ;
+4 [label="petal length (cm) <= 4.95\ngini = 0.28\nsamples = 10\nvalue = [0, 15, 3]\nclass = versicolor", fillcolor="#61ea9a"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 8\nvalue = [0, 15, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 3]\nclass = virginica", fillcolor="#8139e5"] ;
+4 -> 6 ;
+7 [label="gini = 0.0\nsamples = 21\nvalue = [0, 36, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+3 -> 7 ;
+8 [label="gini = 0.0\nsamples = 26\nvalue = [0, 0, 45]\nclass = virginica", fillcolor="#8139e5"] ;
+2 -> 8 ;
+}
